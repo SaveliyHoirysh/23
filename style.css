@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    background-image: url(/a.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+.header {
+    color: blue;
+    font-size: 100px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.img-all{
+    width: 120px;
+    height: 100px;   
+    animation: img-all 5s  infinite alternate ;
+}
+@keyframes img-all{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(85px)
+    }
+}
