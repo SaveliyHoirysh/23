@@ -3,33 +3,54 @@
 }
 
 .wrapper {
-    background-image: url(/a.jpg);
+    background-image: url(img/a.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: 100%;
 
 }
 
 .header {
     color: blue;
     font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .main {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
-.img-all{
-    width: 120px;
-    height: 100px;   
+.img-comtainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.img-all{ 
     animation: img-all 5s  infinite alternate ;
+    object-fit: cover;
+}
+.img-all__item{
+    width: 550px;
+    height: 270px; 
 }
 @keyframes img-all{
     0%{
-        transform: translateX(0);
+        transform: translateX(-90px);
+    }
+    50%{
+        transform: translateX(45px)
     }
     100%{
-        transform: translateX(85px)
+        transform: translateX(90px)
     }
+}
+.poem{
+    margin-top: 50px;
+    color: red;
+   font-size: 45px;
 }
